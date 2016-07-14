@@ -1,4 +1,4 @@
-require "./gsrd/version"
+require "gsrd/version"
 
 module Gsrd
     
@@ -30,7 +30,7 @@ module Gsrd
         
         def go()
             
-            @directory_name = File.join(File.dirname(__FILE__), "../") + "gsrd-downloads"
+            @directory_name = Dir.pwd + "/gsrd-downloads"
             Dir.mkdir(@directory_name) unless File.exists?(@directory_name)
             
             @pagination = 1
