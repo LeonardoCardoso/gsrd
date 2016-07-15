@@ -1,0 +1,19 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "gsrd"
+
+if ARGV.empty?
+    
+    begin
+        raise ArgumentError
+    rescue Exception => ex
+        puts "\nERROR: You must provide your access_token.\nCheck it out @ https://github.com/LeonardoCardoso/gsrd#getting-your-credential\n\n"
+    end
+
+    exit
+
+end
+
+gsrd = Download.new(ARGV[0])
+gsrd.go()

@@ -1,5 +1,3 @@
-require "gsrd/version"
-
 module Gsrd
     
     if ARGV.empty?
