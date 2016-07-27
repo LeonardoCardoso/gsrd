@@ -28,7 +28,10 @@ module Gsrd
         
         def go()
             
-            @directory_name = Dir.pwd + "/gsrd-downloads"
+            @time = Time.new
+            @month = @time.month.to_s.rjust(2, "0")
+            @day = @time.day.to_s.rjust(2, "0")
+            @directory_name = Dir.pwd + "/gsrd-downloads-#{@time.year}-#{@month}-#{@day}"
             Dir.mkdir(@directory_name) unless File.exists?(@directory_name)
             
             @pagination = 1
