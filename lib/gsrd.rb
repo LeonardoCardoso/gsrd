@@ -35,6 +35,7 @@ module Gsrd
             Dir.mkdir(@directory_name) unless File.exists?(@directory_name)
             
             @pagination = 1
+            @count = 0
             
             loop do
                 
@@ -51,11 +52,13 @@ module Gsrd
                     puts "Download URL: " + @download_uri
                     puts "started: " + Time.now.strftime("%d/%m/%Y %H:%M:%S")
                     
-                    @wget = "wget -O " + @directory_name + "/" + @file_name + " " + @download_uri
+                    @wget = "wget -O " + @directory_name + "/" + @file_name + " " + @download_uri + " -q --show-progress"
                     
                     `#{@wget}`
                     
                     puts "finished: " + Time.now.strftime("%d/%m/%Y %H:%M:%S")
+                    
+                    @count += 1
                 
                 end
 
@@ -65,7 +68,7 @@ module Gsrd
             
             end
             
-            puts "\n\n======= Repos downloaded to gsrd-downloads directory =======\n\n"
+            puts "\n\n======= " + @count + " repos were downloaded to gsrd-downloads directory =======\n\n"
 
         end
         

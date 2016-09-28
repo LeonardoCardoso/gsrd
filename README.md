@@ -13,9 +13,15 @@
 ## Configuration
 
 ### Getting your credential
-In order to keep your privacy, create your [personal token on Github](https://github.com/settings/tokens). You just need to select the option `public_repo` as shown below:
+In order to keep your privacy, create your [personal token on Github](https://github.com/settings/tokens).
+
+If you just need to allow access to the public, repos select the option `public_repo` as shown below:
 
 ![public_repo](images/option.png)
+
+If you want to download the private ones as well, select `repo`:
+
+![repo](images/repo.png)
 
 ## Installation
 
@@ -30,6 +36,16 @@ Run the code passing your access token as argument
 $ gsrd "<b>put</b>your<b>forty</b>character<b>generated</b>string<b>here</b>"
 </pre>
 
+This is what you gonna get for every repo to download:
+
+```swift
+======= DOWNLOADING facebook-sdk-swift =======
+URL: https://github.com/facebook/facebook-sdk-swift
+Download URL: https://github.com/facebook/facebook-sdk-swift/archive/master.zip
+started: 28/09/2016 14:46:41
+/Users/THE_PATH/gsrd-downloads-2016-09-28/facebook-facebook-sdk-swift-master.zip 100%[===>] 1023K 248KB/s in 4.1s
+finished: 28/09/2016 14:46:49
+```
 
 ## Requirement
 
