@@ -68,7 +68,7 @@ module Gsrd
             
             end
             
-            puts "\n\n======= " + @count + " repos were downloaded to gsrd-downloads directory =======\n\n"
+            puts "\n\n======= #{@count} repos were downloaded to gsrd-downloads directory =======\n\n"
 
         end
         
