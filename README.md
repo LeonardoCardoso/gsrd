@@ -1,14 +1,6 @@
-<p align="center">
-
 ![gsrd](images/logo.png)
 
-<p align="center">
-**gsrd** downloads your public starred repos.<br />Just in case you want to keep a backup of them from time to time.
-<p>
-
-<p>
-
-<hr />
+> **gsrd** downloads your public starred repos.<br />Just in case you want to keep a backup of them from time to time.
 
 ## Configuration
 
