@@ -17,6 +17,14 @@ If you want to download the private ones as well, select `repo`:
 
 ## Installation
 
+If you don't have bundler installed, please do it first:
+
+```ruby
+$ gem install bundler
+```
+
+Then install gsrd.
+
 ```ruby
 $ gem install gsrd
 ```
