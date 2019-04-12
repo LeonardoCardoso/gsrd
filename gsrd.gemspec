@@ -17,7 +17,7 @@ spec = Gem::Specification.new do |s|
   s.executables   = ["gsrd"]
   s.license      = "MIT"
   s.required_ruby_version = ">= 1.9.3"
-  s.add_dependency 'httparty', '~> 0.13.7'
-  s.add_development_dependency "bundler", "~> 1.10"
-  s.add_development_dependency "rake", "~> 10.0"
+  s.add_dependency 'httparty'
+  s.add_development_dependency "bundler"
+  s.add_development_dependency "rake"
 end
