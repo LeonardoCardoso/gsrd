@@ -7,7 +7,7 @@
 ### Getting your credential
 In order to keep your privacy, create your [personal token on Github](https://github.com/settings/tokens).
 
-If you just need to allow access to the public, repos select the option `public_repo` as shown below:
+If you just need to allow access to the public, repositries select the option `public_repo` as shown below:
 
 ![public_repo](images/option.png)
 
